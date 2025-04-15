@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LetsConvert</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="brand">LetsConvert</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Where Accuracy Meets Simplicity</h1>
+      <p class="hero-subtitle">
+        This platform is designed to simplify your unit conversions — with just a single click, you get instant and accurate results. Start now and experience seamless precision at your fingertips.
+      </p>      
+      <button onclick="scrollToConverter()">Start</button>
+      <p><a href="about.html">How to use this app?</a></p>
+    </div>
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+          <path d="M0,0 C480,100 960,0 1440,100 L1440,150 L0,150 Z" fill="#f0f4f8"></path>
+        </svg>
+      </div>
+  </section>
+  
+  <!-- Converter Section -->
+  <section class="converter-section" id="converter">
+    <div class="converter">
+      <h2>Konverter Satuan</h2>
+
+      <label for="category">Kategori Konversi:</label>
+      <select id="category">
+        <option value="temperature">Suhu</option>
+        <option value="length">Panjang</option>
+        <option value="weight">Berat</option>
+        <option value="time">Waktu</option>
+        <option value="speed">Kecepatan</option>
+      </select>
+
+      <label for="conversion">Jenis Konversi:</label>
+      <select id="conversion"></select>
+
+      <label for="inputValue">Nilai:</label>
+      <input type="number" id="inputValue" placeholder="Masukkan nilai" />
+
+      <div class="result" id="result">Hasil akan muncul di sini</div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <footer class="site-footer">
+    <p>2025 LetsConvert Inc. | Contact: infoin@letsconvert.com</p>
+  </footer>
+  
+</body>
+</html>
